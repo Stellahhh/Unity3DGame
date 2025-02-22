@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Autodestroy : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    public float delay;
-
     // Start is called before the first frame update
     void Start()
     {
-        // Destroy(gameObject, delay);
+        EnemiesManager.instance.AddEnemy(this);
+
     }
 
     // Update is called once per frame
-    void Update()
+    void OnDestroy()
     {
+        EnemiesManager.instance.RemoveEnemy(this);
 
     }
 }
