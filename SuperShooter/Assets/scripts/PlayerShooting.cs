@@ -13,30 +13,7 @@ public class PlayerShooting : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Update is called once per frame
-    // void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Mouse0))
-    //     {
-    //         GameObject clone = Instantiate(prefab);
-    //         clone.transform.position = shootPoint.transform.position;
-    //         clone.transform.rotation = shootPoint.transform.rotation;
-    //     }
 
-    // }
-
-    // void Update()
-    // {
-
-    //     if (Input.GetKeyDown(KeyCode.Mouse0))
-    //     {
-    //         GameObject clone = Instantiate(prefab);
-
-    //         clone.transform.position = shootPoint.transform.position;
-    //         clone.transform.rotation = shootPoint.transform.rotation;
-    //     }
-
-    // }
     public void OnFire()
     {
 
